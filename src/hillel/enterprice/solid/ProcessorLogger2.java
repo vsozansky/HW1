@@ -10,8 +10,8 @@ public class ProcessorLogger2 extends ProcessorLogger implements Processor {
 
     @Override
     public void putOutput() {
-        this.logger.log("Start");
-        this.putOutput();
-        this.logger.log("Stop");
+        this.logger.log("Start Logger2");
+        super.putOutput();
+        this.logger.log("Stop Logger2");
     }
 }
